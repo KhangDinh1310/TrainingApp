@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/mainColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.IntroActivity">
+
+    <ImageView
+        android:id = "@+id/ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src = "@drawable/intro_pic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id ="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "PUSH YOURSEFT\nTO THE LIMIT"
+        android:textColor="@color/white"
+        android:textSize = "40sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView"
+        app:layout_constraintBottom_toBottomOf="@id/ImageView"
+        />
+    <TextView
+        android:id = "@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="We provide a comprehensive solution to help you achieve your fitness goals, from personalized workout plans to nutrition guidance and progress tracking. you’ll have access to diverse training programs, high-quality instructional videos..."
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize = "17sp"
+        android:textAlignment="center"
+        android:textColor="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id = "@+id/button"
+        android:layout_width="0dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/orange_bg"
+        style = "@android:style/Widget.Button"
+        android:text = "Get in"
+        android:textSize="20sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TextView
+            android:id = "@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Already have an account?"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp"
+            android:textSize = "15sp"/>
+
+        <TextView
+            android:id = "@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Login"
+            android:textSize = "15sp"
+            android:textStyle = "bold"
+            android:textAlignment="center"
+            android:textColor="#FD511E"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
